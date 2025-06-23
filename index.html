@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Clinic</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">E-CLINIC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/appointment.html">Appointments</a></li>
+          <li class="nav-item"><a class="nav-link" href="/doctor.html">Doctors</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+        </ul>
+        <a href="login.html" class="btn btn-primary rounded-pill px-4">Login</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- === Hero Section Below Carousel === -->
+  <section class="hero-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+          <h1 class="display-4 fw-bold">Welcome to <br><span>E-Clinic</span></h1>
+          <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urka elite cursus. Integer ult eget elet, prullis vda.</p>
+          <a href="#" class="btn btn-primary get-started-btn">Get Started</a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="images/dr4.jpg" alt="Doctor illustration" class="img-fluid" style="max-width: 400px;">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- === First Carousel: With Indicators & Captions === -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/dr1.png" class="d-block w-100" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to E-Clinic</h5>
+          <p>Your health is our priority.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/dr2.jpg" class="d-block w-100" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Qualified Doctors</h5>
+          <p>24/7 support and healthcare services.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/dr3.jpg" class="d-block w-100" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Book Appointments Online</h5>
+          <p>Fast and easy scheduling at your fingertips.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+ 
+
+
+ <section class="services-section py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4 fw-bold text-primary">Our Services</h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Online Appointment -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body d-flex flex-column">
+            <i class="bi bi-calendar2-check display-4 text-primary mb-3"></i>
+            <h5 class="card-title fw-semibold">Online Appointment</h5>
+            <p class="card-text flex-grow-1">Book appointments from the comfort of your home anytime.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 24/7 Emergency -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body d-flex flex-column">
+            <i class="bi bi-heart-pulse display-4 text-danger mb-3"></i>
+            <h5 class="card-title fw-semibold">24/7 Emergency</h5>
+            <p class="card-text flex-grow-1">Immediate medical help at your fingertips, day or night.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- General Consultation -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body d-flex flex-column">
+            <i class="bi bi-chat-left-text display-4 text-success mb-3"></i>
+            <h5 class="card-title fw-semibold">General Consultation</h5>
+            <p class="card-text flex-grow-1">Consult experienced doctors for your health concerns.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Emergency Care -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body d-flex flex-column">
+            <i class="bi bi-bandaid display-4 text-danger mb-3"></i>
+            <h5 class="card-title fw-semibold">Emergency Care</h5>
+            <p class="card-text flex-grow-1">24/7 immediate medical assistance for urgent health situations.</p>
+            <a href="#" class="btn btn-danger rounded-pill px-4 mt-auto">Call Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pharmacy -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body d-flex flex-column">
+            <i class="bi bi-capsule display-4 text-warning mb-3"></i>
+            <h5 class="card-title fw-semibold">Pharmacy</h5>
+            <p class="card-text flex-grow-1">Order medicines online with fast delivery at your doorstep.</p>
+            <a href="#" class="btn btn-warning rounded-pill px-4 mt-auto">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lab Diagnostics -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body d-flex flex-column">
+<i class="bbi-gear-wide display-4 text-info mb-3"></i>
+            <h5 class="card-title fw-semibold">Lab Diagnostics</h5>
+            <p class="card-text flex-grow-1">Comprehensive blood tests and diagnostics with reliable reports.</p>
+            <a href="#" class="btn btn-info rounded-pill px-4 mt-auto">Book Test</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dental Care -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body d-flex flex-column">
+            <i class="bi bi-brush display-4 text-success mb-3"></i>
+            <h5 class="card-title fw-semibold">Dental Care</h5>
+            <p class="card-text flex-grow-1">Professional dental checkups and treatments for all ages.</p>
+            <a href="#" class="btn btn-success rounded-pill px-4 mt-auto">Book Appointment</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Telemedicine -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body d-flex flex-column">
+            <i class="bi bi-camera-video display-4 text-primary mb-3"></i>
+            <h5 class="card-title fw-semibold">Telemedicine</h5>
+            <p class="card-text flex-grow-1">Video consultations with expert doctors anytime, anywhere.</p>
+            <a href="#" class="btn btn-primary rounded-pill px-4 mt-auto">Consult Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Physiotherapy -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body d-flex flex-column">
+            <i class="bi bi-person-wheelchair display-4 text-secondary mb-3"></i>
+            <h5 class="card-title fw-semibold">Physiotherapy</h5>
+            <p class="card-text flex-grow-1">Personalized physical therapy and rehabilitation services.</p>
+            <a href="#" class="btn btn-secondary rounded-pill px-4 mt-auto">Book Session</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Special Offers Section -->
+<section class="offers-section py-5 text-white" style="background: linear-gradient(to right, #0d6efd, #6610f2);">
+  <div class="container text-center">
+    <h2 class="mb-4 fw-bold">Special Offers</h2>
+    <div class="row justify-content-center g-4">
+      
+      <div class="col-md-4">
+        <div class="p-4 bg-white text-dark rounded shadow-sm h-100">
+          <h5 class="fw-bold">🎁 Free First Check-up</h5>
+          <p>Get your first consultation completely free. New patients only!</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="p-4 bg-white text-dark rounded shadow-sm h-100">
+          <h5 class="fw-bold">💉 20% Off Lab Tests</h5>
+          <p>Enjoy discounted rates on all lab diagnostics this month.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-4 bg-white text-dark rounded shadow-sm h-100">
+          <h5 class="fw-bold">🦷 Dental Cleaning Discount</h5>
+          <p>Save 15% on all dental cleaning services this season.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-4 bg-white text-dark rounded shadow-sm h-100">
+          <h5 class="fw-bold">🏥 Free Emergency Consultation</h5>
+          <p>Complimentary emergency consultation for registered patients.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-4 bg-white text-dark rounded shadow-sm h-100">
+          <h5 class="fw-bold">💊 Pharmacy Discount</h5>
+          <p>Get 10% off on all prescription medicines ordered online.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-4 bg-white text-dark rounded shadow-sm h-100">
+          <h5 class="fw-bold">📱 Free Telemedicine Session</h5>
+          <p>Book a free 15-minute telemedicine consultation with our specialists.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+ <!-- === Footer === -->
+ <!-- Awesome Footer -->
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container text-center text-md-start">
+    <div class="row text-center text-md-start">
+
+      <!-- About -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 fw-bold text-info">E-CLINIC</h5>
+        <p>
+          Providing trusted healthcare services with professional doctors, 24/7 support, and online appointments.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 fw-bold text-info">Quick Links</h5>
+        <p><a href="#" class="text-white text-decoration-none footer-link">Home</a></p>
+        <p><a href="#" class="text-white text-decoration-none footer-link">Appointments</a></p>
+        <p><a href="#" class="text-white text-decoration-none footer-link">Doctors</a></p>
+        <p><a href="#" class="text-white text-decoration-none footer-link">Contact</a></p>
+      </div>
+
+      <!-- Services -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 fw-bold text-info">Services</h5>
+        <p><a href="#" class="text-white text-decoration-none footer-link">Online Booking</a></p>
+        <p><a href="#" class="text-white text-decoration-none footer-link">Emergency Help</a></p>
+        <p><a href="#" class="text-white text-decoration-none footer-link">Health Tips</a></p>
+        <p><a href="#" class="text-white text-decoration-none footer-link">Consultation</a></p>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 fw-bold text-info">Contact</h5>
+        <p><i class="bi bi-house-door-fill me-2"></i> Kathmandu, Nepal</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> info@eclinic.com</p>
+        <p><i class="bi bi-telephone-fill me-2"></i> +977 9800000000</p>
+        <p><i class="bi bi-clock-fill me-2"></i> 24/7 Support</p>
+      </div>
+    </div>
+
+    <hr class="mb-4" />
+    <!-- Footer Bottom -->
+    <div class="row align-items-center text-center">
+      <div class="col-md-7 col-lg-8">
+        <p class="mb-0">&copy; 2025 <strong class="text-info">E-Clinic</strong>. All rights reserved.</p>
+      </div>
+      <div class="col-md-5 col-lg-4">
+        <!-- Social Links -->
+        <div class="text-center text-md-end">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
